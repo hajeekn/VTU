@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "routes": [
+      {"src": "/(.*)","dest": "http://image-vercel.test.upcdn.net/$1"}
+  ]
+}
