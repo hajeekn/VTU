@@ -1,7 +1,8 @@
 {
   "version": 2,
   "routes": [
-      {"src": "/prop/(.*)", "status": 404, "dest": "http://image-vercel.test.upcdn.net/404.html"},
-      {"src": "/(.*)", "status": 200, "dest": "http://image-vercel.test.upcdn.net/$1"}
+      {"src": "/(.*)", "status": 200, "dest": "http://image-vercel.test.upcdn.net/$1"},
+      {"src": "/prop/(.*)", "status": 200, "dest": "http://image-vercel.test.upcdn.net/prop/$1"},
+      {"src": "/prop/(.*)", "status": 404, "dest": "http://image-vercel.test.upcdn.net/404.html"}
   ]
 }
