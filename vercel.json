@@ -1,8 +1,8 @@
 {
   "version": 2,
   "routes": [
-      {"src": "/(.*)","dest": "http://image-vercel.test.upcdn.net/$1"},
       { "handle": "filesystem" },
-      { "src": "/(.*)", "status": 404, "dest": "/404.html" }
+      { "src": "/(.*)", "status": 404, "dest": "/404.html" },
+      {"src": "/(.*)","dest": "http://image-vercel.test.upcdn.net/$1"}
   ]
 }
